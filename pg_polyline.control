@@ -1,0 +1,6 @@
+comment = 'pg_polyline:  Created by pgrx'
+default_version = '@CARGO_VERSION@'
+module_pathname = '$libdir/pg_polyline'
+relocatable = false
+superuser = true
+trusted = false
