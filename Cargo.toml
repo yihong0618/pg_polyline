@@ -21,13 +21,13 @@ pg17 = ["pgrx/pg17", "pgrx-tests/pg17" ]
 pg_test = []
 
 [dependencies]
-pgrx = "=0.12.6"
+pgrx = "=0.12.7"
 geo-types = "0.7.8"
 # This is a fork of the original polyline crate that fix the encoding/decoding error
 polyline = { git = "https://github.com/mattiZed/polyline.git", branch = "refactor/encode-decode-via-LUT" }
 
 [dev-dependencies]
-pgrx-tests = "=0.12.6"
+pgrx-tests = "=0.12.7"
 
 [profile.dev]
 panic = "unwind"
