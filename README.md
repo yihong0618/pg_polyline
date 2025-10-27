@@ -1,6 +1,8 @@
 # pg_polyline
 Fast Google Encoded Polyline encoding &amp; decoding for postgres Extension
 
+Built with `pgrx` 0.16.1 and compatible with PostgreSQL 13 through 18.
+
 ## Usage
 
 ```sql

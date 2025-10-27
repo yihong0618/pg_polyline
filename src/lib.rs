@@ -1,6 +1,5 @@
 use pgrx::prelude::*;
 use pgrx::pg_sys::Point;
-use polyline;
 use geo_types::{LineString, coord};
 
 ::pgrx::pg_module_magic!();
@@ -16,7 +15,7 @@ fn polyline_encode(coords: pgrx::Array<Point<>>, precision: i32) -> String {
             y: arr.y,
         }
     }).collect();
-    let res: LineString<f64> = LineString(coords.into());
+    let res: LineString<f64> = LineString(coords);
     polyline::encode_coordinates(res, precision as u32).unwrap()
 }
 
