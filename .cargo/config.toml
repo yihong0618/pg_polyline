@@ -1,0 +1,6 @@
+[build]
+rustflags = ["-C", "link-args=-Wl,-undefined,dynamic_lookup"]
+
+# Note: MACOSX_DEPLOYMENT_TARGET should be set in your shell environment
+# or CI configuration to match your macOS version (e.g., 15.5)
+# Example for shell: export MACOSX_DEPLOYMENT_TARGET=15.5
