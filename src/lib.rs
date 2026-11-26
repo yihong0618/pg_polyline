@@ -38,7 +38,7 @@ mod tests {
 
     #[pg_test]
     fn test_polyline_encode() {
-        let s = Spi::get_one("select polyline_encode(ARRAY[point(-120.2, 38.5), point(-120.95, 40.7), point(-126.453, 43.252)], 6)");
+        let s = Spi::get_one::<String>("select polyline_encode(ARRAY[point(-120.2, 38.5), point(-120.95, 40.7), point(-126.453, 43.252)], 6)");
         assert_eq!(s.unwrap(), "_izlhA~rlgdF_{geC~ywl@_kwzCn`{nI".to_string().into());
     }
     #[pg_test]
