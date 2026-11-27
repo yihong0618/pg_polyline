@@ -1,7 +1,7 @@
 # pg_polyline
 Fast Google Encoded Polyline encoding &amp; decoding for postgres Extension
 
-Built with `pgrx` 0.16.1 and compatible with PostgreSQL 13 through 18.
+Built with `pgrx` 0.20.1 and compatible with PostgreSQL 15 through 19.
 
 ## Usage
 
@@ -23,11 +23,11 @@ db=> select polyline_decode('_ibE_seK_seK_seK', 6);
 
 ## Installation
 
-Assuming that rust toolchain is already istalled:
+Install Rust 1.99.1 or later before building.
 
 ```sh
 # install pgrx
-cargo install --locked cargo-pgrx
+cargo install --locked cargo-pgrx --version 0.20.1
 cargo pgrx init
 # build and install pg_polyline
 git clone https://github.com/yihong0618/pg_polyline.git
